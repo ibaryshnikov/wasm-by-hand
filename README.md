@@ -11,8 +11,9 @@ wat2wasm main.wat -o main.wasm
 ## Serve
 Then use your favourite http static server, for example:
 ```bash
-python -m SimpleHTTPServer 8055
+python -m SimpleHTTPServer 8000
 ```
+and navigate to [localhost:8000](localhost:8000)
 
 ## To presentation
 [start slides](./START.md)
