@@ -1,9 +1,9 @@
 ### Put value on stack
-```
+```wat
 i32.const 5
 ```
 ### Execute instruction
-```
+```wat
 i32.const 3
 i32.const 4
 i32.add
@@ -11,13 +11,13 @@ i32.add
 this will take two values from stack, sum them, and put the result back on stack
 
 ### Simple function
-```
+```wat
 (func $answer (result i32)
     i32.const 42
 )
 ```
 ### We can export functions to JavaScript
-```
+```wat
 (module
     (func $answer (result i32)
         i32.const 42

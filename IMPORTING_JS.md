@@ -1,12 +1,12 @@
 ### It's possible to export JavaScript functions to WebAssembly
-```
+```javascript
 const results = await WebAssembly.instantiate(bytes, { 'env': {
     print: (k) => console.log('k is ', k),
 }});
 results.instance.exports.check();
 ```
 ### And then use it
-```
+```wat
 (module
     (func $print (import "env" "print") (param i32))
 
